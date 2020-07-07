@@ -1,3 +1,6 @@
+
+# solve with digit by digit addition
+
 num1 = '123'
 num2 = '1000'
 
@@ -8,7 +11,7 @@ num1_arr = list(num1)
 num2_arr = list(num2)
 num1_arr = num1_arr[::-1]
 num2_arr = num2_arr[::-1]
-print(num1_arr)
+
 
 sum1 = 0
 sum2 = 0
@@ -24,7 +27,6 @@ for i in range(0, len(num1_arr)):
 
         sum1 += mult * string_to_int[num1_arr[i]]
 
-print(sum1)
 for j in range(0, len(num2_arr)):
     mult = 0
     if string_to_int[num2_arr[j]] > 0:
